@@ -1,0 +1,3 @@
+[submodule "chrome-ext-oauth"]
+	path = chrome-ext-oauth
+	url = git@github.com:YoshiyukiKato/chrome-ext-oauth.git
