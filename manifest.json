@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "chrome-ext-oauth-sample",
+  "description": "sample app of chrome-ext-oauth",
+  "version": "0.0.1",
+  "background": {
+    "page": "background.html"
+  },
+  "externally_connectable": {
+    "matches": [
+      "https://twitter.com/oauth/*",
+      "https://api.twitter.com/oauth/*"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "https://twitter.com/oauth/*",
+    "https://api.twitter.com/oauth/*"
+  ],
+  "web_accessible_resources": [
+    "background.html"
+  ],
+  "browser_action":{
+    "default_popup": "popup.html"
+  }
+}
